@@ -4,6 +4,8 @@ import { usePathname } from "next/navigation"; // Checking Active Links
 
 const Products = () => {
   const pathname = usePathname(); //You can use usePathname() to determine if a link is active
+
+  throw new Error("Server ERROR")
   return (
     <>
       <h1>All Products </h1>
